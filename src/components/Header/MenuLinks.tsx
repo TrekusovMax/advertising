@@ -14,25 +14,35 @@ export default function MenuLinks() {
           my={5}
           w="100%"
           onClick={() => console.log('111')}
-        >
+          _hover={{ background: 'orange.300', color: 'white' }}>
           <Heading as="h4" size="lg" fontWeight={400}>
-            О нас
+            О НАС
           </Heading>
         </Button>
       </NextLink>
 
       <NextLink href="#examples" passHref>
-        <Button variant="ghost" aria-label="Examples" my={5} w="100%">
+        <Button
+          variant="ghost"
+          aria-label="Examples"
+          my={5}
+          w="100%"
+          _hover={{ background: 'orange.300', color: 'white' }}>
           <Heading as="h4" size="lg" fontWeight={400}>
-            Работы
+            РАБОТЫ
           </Heading>
         </Button>
       </NextLink>
 
       <NextLink href="#contact" passHref>
-        <Button variant="ghost" aria-label="Contact" my={5} w="100%">
+        <Button
+          variant="ghost"
+          aria-label="Contact"
+          my={5}
+          w="100%"
+          _hover={{ background: 'orange.300', color: 'white' }}>
           <Heading as="h4" size="lg" fontWeight={400}>
-            Контакты
+            КОНТАКТЫ
           </Heading>
         </Button>
       </NextLink>

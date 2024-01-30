@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <Box>
-      <Flex position="fixed" top="1rem" right="1rem" align="center">
+      <Flex position="absolute" top="1rem" right="1rem" align="center">
         {/* Desktop */}
         <Flex display={['none', 'none', 'flex', 'flex']} paddingRight={10}>
           <MenuLinks />
@@ -24,6 +24,8 @@ export default function Header() {
           icon={<HamburgerIcon />}
           onClick={() => changeDisplay('flex')}
           display={['flex', 'flex', 'none', 'none']}
+          background={'none'}
+          _hover={{ background: 'orange.500' }}
         />
       </Flex>
       {/* Mobile Content */}
