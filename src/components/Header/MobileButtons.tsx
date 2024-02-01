@@ -34,7 +34,7 @@ const MobileButtons = ({ display, changeDisplay }: MobileMenuProps) => {
       </Flex>
 
       <Flex flexDir="column" align="center">
-        <MenuLinks />
+        <MenuLinks onClick={() => changeDisplay('none')} />
       </Flex>
     </Flex>
   )

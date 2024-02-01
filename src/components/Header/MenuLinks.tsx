@@ -3,8 +3,10 @@
 import { Button, Heading } from '@chakra-ui/react'
 
 import NextLink from 'next/link'
-
-export default function MenuLinks() {
+interface MobileMenuProps {
+  onClick: (s: string) => void
+}
+export default function MenuLinks({ onClick }: MobileMenuProps) {
   return (
     <>
       <NextLink href="#about" passHref>
@@ -13,8 +15,9 @@ export default function MenuLinks() {
           aria-label="About"
           my={5}
           w="100%"
-          onClick={() => console.log('111')}
-          _hover={{ background: 'orange.300', color: 'white' }}>
+          onClick={() => onClick('none')}
+          _hover={{ background: 'orange.300', color: 'white' }}
+        >
           <Heading as="h4" size="lg" fontWeight={400}>
             О НАС
           </Heading>
@@ -27,7 +30,9 @@ export default function MenuLinks() {
           aria-label="Examples"
           my={5}
           w="100%"
-          _hover={{ background: 'orange.300', color: 'white' }}>
+          onClick={() => onClick('none')}
+          _hover={{ background: 'orange.300', color: 'white' }}
+        >
           <Heading as="h4" size="lg" fontWeight={400}>
             РАБОТЫ
           </Heading>
@@ -40,7 +45,9 @@ export default function MenuLinks() {
           aria-label="Contact"
           my={5}
           w="100%"
-          _hover={{ background: 'orange.300', color: 'white' }}>
+          onClick={() => onClick('none')}
+          _hover={{ background: 'orange.300', color: 'white' }}
+        >
           <Heading as="h4" size="lg" fontWeight={400}>
             КОНТАКТЫ
           </Heading>

@@ -6,7 +6,12 @@ import { Title } from '../Text'
 export default function Logo() {
   return (
     <>
-      <Box position={'relative'} top={20} paddingX={50} display={['none', 'none', 'flex', 'flex']}>
+      <Box
+        position={'relative'}
+        top={20}
+        paddingX={50}
+        display={['none', 'none', 'flex', 'flex']}
+      >
         <Flex ml={10} flexDir={'column'}>
           <Flex ml={10} flexDir={'row'} mt={4}>
             <Image alt="logo" src={'/logo.png'} width={'500'} height={'250'} />
@@ -29,9 +34,14 @@ export default function Logo() {
           </Flex>
         </Flex>
       </Box>
-      <Box position={'relative'} top={20} paddingX={0} display={['flex', 'flex', 'none', 'none']}>
+      <Box
+        position={'relative'}
+        top={20}
+        paddingX={0}
+        display={['flex', 'flex', 'none', 'none']}
+      >
         <Flex flexDir={'column'}>
-          <Flex flexDir={'column'} mt={4}>
+          <Flex flexDir={'column'}>
             <Image alt="logo" src={'/logo.png'} width={'500'} height={'250'} />
             <Spacer />
             <Heading mt={3} as="h2" size="2xl" textAlign={'center'} color="red">

@@ -1,12 +1,20 @@
 'use client'
-import { Flex, Box, Heading, List, ListItem, ListIcon, Text } from '@chakra-ui/react'
+import {
+  Flex,
+  Box,
+  Heading,
+  List,
+  ListItem,
+  ListIcon,
+  Text,
+} from '@chakra-ui/react'
 import { CheckIcon } from '@chakra-ui/icons'
 
 export default function Title() {
   return (
     <>
       <Box position={'relative'} top={20}>
-        <Flex align="center" flexDir={'column'} my={20}>
+        <Flex align="center" flexDir={'column'} mt={20}>
           <Heading as="h2" size="2xl" color="red">
             Почему стоит работать именно с нами:
           </Heading>
@@ -25,9 +33,8 @@ export default function Title() {
             </ListItem>
             <ListItem>
               <Text fontSize="2xl">
-                
-                <ListIcon as={CheckIcon} color="red.500" />У нас низкие цены на разные виды
-                продукции
+                <ListIcon as={CheckIcon} color="red.500" />У нас низкие цены на
+                разные виды продукции
               </Text>
             </ListItem>
           </List>

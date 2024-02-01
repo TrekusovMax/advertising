@@ -14,7 +14,7 @@ export default function Header() {
       <Flex position="absolute" top="1rem" right="1rem" align="center">
         {/* Desktop */}
         <Flex display={['none', 'none', 'flex', 'flex']} paddingRight={10}>
-          <MenuLinks />
+          <MenuLinks onClick={() => changeDisplay('none')} />
         </Flex>
         {/* Mobile */}
         <IconButton

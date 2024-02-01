@@ -1,12 +1,30 @@
 'use client'
-import { useState } from 'react'
-import { Flex, IconButton, Box } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+
+import { Flex, Box } from '@chakra-ui/react'
+import AboutText from './AboutText'
 
 export default function AboutUs() {
   return (
-    <Box>
-      <Flex position="fixed" top="1rem" right="1rem" align="center"></Flex>
-    </Box>
+    <>
+      <Box
+        position={'relative'}
+        top={10}
+        paddingX={100}
+        display={['none', 'none', 'flex', 'flex']}
+      >
+        <Flex align={'flex-start'} flexDir={'column'} my={20}>
+          <AboutText />
+        </Flex>
+      </Box>
+      <Box
+        position={'relative'}
+        top={10}
+        display={['flex', 'flex', 'none', 'none']}
+      >
+        <Flex align={'stretch'} flexDir={'column'} my={20}>
+          <AboutText />
+        </Flex>
+      </Box>
+    </>
   )
 }
