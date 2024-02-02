@@ -1,12 +1,12 @@
 'use client'
 
 import { Box, SimpleGrid, Heading } from '@chakra-ui/react'
-import { useMediaQuery } from '@chakra-ui/react'
+
 import CardImage from './CardImage'
 
 export default function Gallery() {
   const imagesId = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-  const [isLargerThan1280] = useMediaQuery('(min-width: 1200px)')
+
   return (
     <>
       <Heading
@@ -14,9 +14,22 @@ export default function Gallery() {
         size="2xl"
         color="red"
         top={10}
-        px={isLargerThan1280 ? 100 : 0}
+        px={100}
         id="examples"
-        textAlign={!isLargerThan1280 ? 'center' : 'start'}
+        textAlign={'start'}
+        display={['none', 'none', 'flex', 'flex']}
+      >
+        Наши работы:
+      </Heading>
+      <Heading
+        as="h2"
+        size="2xl"
+        color="red"
+        top={10}
+        px={0}
+        id="examples"
+        textAlign={'center'}
+        display={['flex', 'flex', 'none', 'none']}
       >
         Наши работы:
       </Heading>

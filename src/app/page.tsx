@@ -1,3 +1,4 @@
+import { Contact } from '@/components/Contact'
 import { Gallery } from '@/components/Gallery'
 import { Header, Logo } from '@/components/Header'
 import { AboutUs, Title } from '@/components/Text'
@@ -11,6 +12,7 @@ export default function Home() {
       <Title />
       <AboutUs />
       <Gallery />
+      <Contact />
     </Stack>
   )
 }
