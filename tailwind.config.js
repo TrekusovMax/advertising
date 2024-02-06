@@ -4,7 +4,11 @@ const { addDynamicIconSelectors } = require('@iconify/tailwind')
 module.exports = {
   content: ['./public/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'header-text': '#FF2400',
+      },
+    },
   },
   plugins: [
     // Plugin with dynamic selectors for '.icon-'

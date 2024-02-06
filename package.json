@@ -30,7 +30,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development npx webpack serve --config webpack.config.js",
-    "dev": " npx tailwindcss -i ./src/main.css -o ./public/style.css --watch",
+    "dev": " npx tailwindcss -i ./src/main.css -o ./public/style.css --watch & npm run start",
     "build": "cross-env NODE_ENV=production npx webpack --config webpack.config.js"
   },
   "keywords": [],
@@ -38,3 +38,4 @@
   "license": "ISC",
   "description": ""
 }
+

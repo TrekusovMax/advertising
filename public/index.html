@@ -9,18 +9,19 @@
       rel="stylesheet"
     />
 
-    <title>Document</title>
+    <title>Рекламные решения</title>
+    <script defer src="../src/index.js"></script>
   </head>
   <body>
     <div class="container mx-auto relative">
       <!-- Navbar -->
       <nav class="absolute w-full flex justify-end px-3">
         <!-- Hamburger menu -->
-        <a href="#" class="text-5xl lg:invisible" id="menuBtn">
+        <a href="#" class="text-5xl z-20 lg:hidden" id="menuBtn">
           <i class="bx bx-menu"></i>
         </a>
         <!-- Hamburger menu -->
-        <div class="uppercase mt-10 text-3xl flex gap-x-5">
+        <div class="uppercase mt-10 hidden text-3xl lg:flex gap-x-5">
           <a href="#">О нас</a>
           <a href="#">Работы</a>
           <a href="#">Контакты</a>
@@ -29,13 +30,41 @@
       <!-- Navbar -->
       <!-- Menu -->
       <div
-        class="absolute container h-screen bg-gray-400/90 flex flex-col items-center justify-center text-6xl text-gray-500 gap-y-7"
+        class="absolute container h-screen bg-white/90 flex flex-col items-center justify-center text-6xl text-gray-500 gap-y-7 z-10 scale-x-0 duration-200 origin-left"
+        id="menu"
       >
         <a href="#">О нас</a>
         <a href="#">Работы</a>
         <a href="#">Контакты</a>
       </div>
       <!-- Menu -->
+      <main class="mt-10">
+        <!-- logo -->
+        <section
+          class="lg:pt-32 pt-10 flex lg:justify-around justify-center lg:items-start items-center flex-col lg:flex-row"
+        >
+          <div class="lg:w-[500px] w-auto lg:mt-1 mt-5 px-5">
+            <img src="img/logo.png" alt="logo" />
+          </div>
+          <div class="lg:mt-2 mt-5 w-auto">
+            <div
+              class="uppercase font-bold text-header-text lg:text-6xl text-4xl"
+            >
+              Швейная компания <br />
+              полного цикла
+            </div>
+          </div>
+          <div class="space-x-0"></div>
+        </section>
+        <!-- logo -->
+        <!-- header -->
+        <section class="mt-5">
+          <div class="w-auto px-5 mx-auto">
+            <img src="img/header.png" alt="header" />
+          </div>
+        </section>
+        <!-- header -->
+      </main>
     </div>
   </body>
 </html>
