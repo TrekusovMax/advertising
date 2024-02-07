@@ -9,6 +9,10 @@ module.exports = {
         'header-text': '#FF2400',
       },
     },
+    listStyleImage: {
+      check: 'url("./img/check.svg")',
+      chec: 'url("./img/chec.svg")',
+    },
   },
   plugins: [
     // Plugin with dynamic selectors for '.icon-'
@@ -21,4 +25,3 @@ module.exports = {
     }),
   ],
 }
-
