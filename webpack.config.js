@@ -39,11 +39,14 @@ module.exports = {
 
     new MiniCssExtractPlugin(),
   ],
-  devServer: {
-    port: 3000,
-    hot: true,
-    open: true,
-  },
+  devServer:
+    mode === 'production'
+      ? {
+          port: 3000,
+          hot: true,
+          open: true,
+        }
+      : {},
   optimization: {
     minimize: true,
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
